@@ -1,0 +1,226 @@
+body {
+  background-color: lightgrey;
+}
+.tl {
+  left: 0;
+  top: 0;
+}
+.tr {
+  right: 0;
+  top: 0;
+}
+.br {
+  right: 0;
+  bottom: 0;
+}
+.bl {
+  left: 0;
+  bottom: 0;
+}
+.spinner {
+  display: block;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  -webkit-animation: PETALS 2.2s linear infinite;
+          animation: PETALS 2.2s linear infinite;
+}
+.spinner .dot {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  display: block;
+  border-radius: 2em;
+}
+.spinner .dot:nth-child(1) {
+  background-color: #4a453f;
+}
+.spinner .dot:nth-child(2) {
+  background-color: #ff4967;
+  right: 0;
+  top: 0;
+}
+.spinner .dot:nth-child(3) {
+  background-color: #28ddb9;
+  right: 0;
+  bottom: 0;
+}
+.spinner .dot:nth-child(4) {
+  background-color: #ffc13f;
+  left: 0;
+  bottom: 0;
+}
+@-webkit-keyframes PETALS {
+  .shrink {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+  }
+  .stretch {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+  }
+  0% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  12.5% {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  25% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  37.5% {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  50% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  62.5% {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  75% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  87.5% {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes PETALS {
+  .shrink {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+  }
+  .stretch {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+  }
+  0% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  12.5% {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  25% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  37.5% {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  50% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  62.5% {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  75% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  87.5% {
+    width: 8.47106781em;
+    top: 0.76446609em;
+    left: 0.76446609em;
+    height: 8.47106781em;
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=spinner.css.map */
