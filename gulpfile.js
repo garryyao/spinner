@@ -20,3 +20,10 @@ gulp.task('watch', function () {
     });
 
 });
+
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+    return gulp.src(['./*.+(html|css|map)'])
+        .pipe(deploy());
+});
