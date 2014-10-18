@@ -1,0 +1,24 @@
+{
+  "name": "css3-spinner",
+  "version": "0.0.1",
+  "description": "spinner animated with CSS3 animation",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css3",
+    "spinner",
+    "animation"
+  ],
+  "author": "Garry Yao <yaojun85@gmail.com>",
+  "license": "BSD",
+  "dependencies": {
+    "gulp": "^3.8.8",
+    "gulp-gh-pages": "^0.4.0",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-less": "^1.3.6",
+    "gulp-sourcemaps": "^1.2.4"
+  },
+  "devDependencies": {}
+}

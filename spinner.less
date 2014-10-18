@@ -1,0 +1,115 @@
+body {
+  background-color: lightgrey;
+}
+
+@size: 10em;
+@duration: 2.2s;
+@shrink-scale: .75;
+@dot-size: @size/2.5;
+
+.tl {
+  left: 0;
+  top: 0;
+}
+
+.tr {
+  right: 0;
+  top: 0;
+}
+
+.br {
+  right: 0;
+  bottom: 0;
+}
+
+.bl {
+  left: 0;
+  bottom: 0;
+}
+
+.spinner {
+  display: block;
+  position: relative;
+  width: @size;
+  height: @size;
+  animation: PETALS @duration linear infinite;
+  .dot {
+    position: absolute;
+    width: @dot-size;
+    height: @dot-size;
+    display: block;
+    border-radius: @dot-size/2;
+    &:nth-child(1) {
+      background-color: #4a453f;
+    }
+    &:nth-child(2) {
+      background-color: #ff4967;
+      .tr;
+    }
+    &:nth-child(3) {
+      background-color: #28ddb9;
+      .br;
+    }
+    &:nth-child(4) {
+      background-color: #ffc13f;
+      .bl;
+    }
+  }
+}
+
+
+@keyframes PETALS {
+  @small: (@size/2)*sqrt(2) + @dot-size*0.35;
+  @shift: (@size - @small)/2;
+
+  .shrink {
+    width: @small;
+    top: @shift;
+    left: @shift;
+    height: @small;
+  }
+
+  .stretch {
+    top: 0;
+    left: 0;
+    width: @size;
+    height: @size;
+  }
+
+  0% {
+    .stretch;
+    transform: rotate(0deg);
+  }
+  12.5% {
+    .shrink;
+    transform: rotate(45deg);
+  }
+  25% {
+    .stretch;
+    transform: rotate(90deg);
+  }
+  37.5% {
+    .shrink;
+    transform: rotate(135deg);
+  }
+  50% {
+    .stretch;
+    transform: rotate(180deg);
+  }
+  62.5% {
+    .shrink;
+    transform: rotate(225deg);
+  }
+  75% {
+    .stretch;
+    transform: rotate(270deg);
+  }
+  87.5% {
+    .shrink;
+    transform: rotate(315deg);
+  }
+  100% {
+    .stretch;
+    transform: rotate(360deg);
+  }
+}
